@@ -3,10 +3,10 @@ import { CounterContext } from '../contexts/CounterContextProvider'
 
 const IncreaseCounter = () => {
 
-    const { handleDecrease } = useContext(CounterContext);
+    const { handleIncrease } = useContext(CounterContext);
 
-    return(
-        <button className='btn btn-primary' onClick={handleDecrease}>-</button>
+    return (
+        <button className='btn btn-primary' onClick={handleIncrease}>+</button>
     )
 }
 
